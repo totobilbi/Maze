@@ -7,7 +7,7 @@ Devloped with Kotlin
 
 
 # Menu and Level 1
-![](level1.gif)
+![](menu.gif)
 
 
 # Random Level
