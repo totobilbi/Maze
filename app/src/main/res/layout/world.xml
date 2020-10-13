@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grassland_background"
+    android:id="@+id/grassland_"
+    tools:context=".World">
+
+
+    <ImageView
+        android:id="@+id/main_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_icon"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/b_back"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:src="@drawable/button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_level1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/b_level2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toStartOf="@+id/b_level3"
+        app:layout_constraintStart_toEndOf="@+id/b_level1"
+        app:layout_constraintTop_toTopOf="@+id/b_level1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/b_level3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="3"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/b_level1" />
+
+    <Button
+        android:id="@+id/b_level4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="4"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/b_level1"
+        app:layout_constraintStart_toStartOf="@+id/b_level1"
+        app:layout_constraintTop_toBottomOf="@+id/b_level1" />
+
+    <Button
+        android:id="@+id/b_level5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/b_level6"
+        app:layout_constraintStart_toEndOf="@+id/b_level4"
+        app:layout_constraintTop_toTopOf="@+id/b_level4" />
+
+    <Button
+        android:id="@+id/b_level6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="@+id/b_level3"
+        app:layout_constraintStart_toStartOf="@+id/b_level3"
+        app:layout_constraintTop_toBottomOf="@+id/b_level3" />
+
+    <Button
+        android:id="@+id/b_level7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="7"
+        app:layout_constraintEnd_toEndOf="@+id/b_level4"
+        app:layout_constraintStart_toStartOf="@+id/b_level4"
+        app:layout_constraintTop_toBottomOf="@+id/b_level4" />
+
+    <Button
+        android:id="@+id/b_level8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/b_level9"
+        app:layout_constraintStart_toEndOf="@+id/b_level7"
+        app:layout_constraintTop_toTopOf="@+id/b_level7" />
+
+    <Button
+        android:id="@+id/b_level9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="@+id/b_level6"
+        app:layout_constraintStart_toStartOf="@+id/b_level6"
+        app:layout_constraintTop_toBottomOf="@+id/b_level6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

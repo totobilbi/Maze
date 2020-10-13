@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grassland_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level">
+
+
+    <com.example.maze.TypeWriter
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/b_back"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:src="@drawable/button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="1dp"/>
+
+    <ImageView
+        android:id="@+id/b_restart"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:elevation="1dp"
+        android:src="@drawable/button_restart"
+        app:layout_constraintEnd_toEndOf="@+id/game_tile_09"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_player"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/game_player"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/game_tile_21"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_12"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_10"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_01"
+        app:layout_constraintWidth_percent="0.1" />
+
+
+
+    <TextView
+        android:id="@+id/game_tile_83"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_84"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_84"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_85"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_82"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_83"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_81"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_80"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_86"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_75"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_76"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_54"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_55"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_53"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_52"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_57"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_58"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_56"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_57"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_55"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_56"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_61"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_60"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_63"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_64"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_66"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_67"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_64"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_65"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_62"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_63"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_47"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_48"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_35"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_48"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_49"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_35"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_45"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_44"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_35"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_46"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_45"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_36"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_43"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_52"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_33"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_28"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_29"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_15"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_24"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_15"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_27"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_16"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_28"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_17"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_68"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_69"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_58"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_88"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintBottom_toTopOf="@+id/game_tile_98"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_59"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_58"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_59"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_43"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_67"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_68"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_65"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_66"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_51"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_23"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_14"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_22"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_13"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_21"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_12"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_87"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_88"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_86"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_87"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_78"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_78"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_79"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_77"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_78"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_76"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_77"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_74"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_75"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_73"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_74"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_72"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintEnd_toStartOf="@+id/game_tile_73"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_71"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_70"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_68"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_31"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_30"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_21"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_20"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_11"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_17"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_08"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_16"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_07"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_15"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_06"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_14"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_05"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_13"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_04"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+
+        app:layout_constraintStart_toEndOf="@+id/game_tile_12"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_03"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_11"
+
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_02"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_89"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_79"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_79"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_69"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_39"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_29"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_69"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_59"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_59"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_49"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_49"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_39"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_29"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_19"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_19"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_09"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_99"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_98"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_98"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_97"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_97"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_96"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_09"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_08"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_07"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_06"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_06"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_04"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_96"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_95"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_94"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_94"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_93"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_93"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_92"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_92"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_91"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_91"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_90"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_80"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_70"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_70"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_60"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_60"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_50"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_50"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_40"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_40"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_30"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_90"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_20"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_10"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_wall"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_00"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_10"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_01"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_41"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_40"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_31"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_51"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_50"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_41"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_32"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_31"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_22"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_52"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_51"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_42"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_42"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_41"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_32"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_38"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_37"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_28"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_37"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_36"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_27"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_36"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_35"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_26"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_35"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_34"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_25"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_34"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_33"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_24"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_33"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_32"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_23"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/game_tile_44"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grassland_floor"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/game_tile_43"
+        app:layout_constraintTop_toBottomOf="@+id/game_tile_34"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/arrow_left"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/arrow_right"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/arrow_left"
+        app:layout_constraintTop_toTopOf="@+id/arrow_left" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/arrow_up"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/arrow_down"
+        app:layout_constraintEnd_toEndOf="@+id/arrow_down" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:backgroundTint="@android:color/transparent"
+        android:src="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

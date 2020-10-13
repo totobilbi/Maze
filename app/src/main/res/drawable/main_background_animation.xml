@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected" android:oneshot="false">
+    <item android:drawable="@drawable/main_background_frame0" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame1" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame2" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame3" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame4" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame5" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame6" android:duration="50" />
+    <item android:drawable="@drawable/main_background_frame7" android:duration="50" />
+</animation-list>
+
+
