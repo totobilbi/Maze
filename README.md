@@ -1,5 +1,5 @@
 # Maze
-Mave solving game
+Maze solving game
 
 Student project
 
